@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="first" style="background:white;"></view>
+      <view class="th">
+        <view class="th thcolor dayborder" wx:for="{{day}}" wx:for-item="i" wx:key="index">
+          {{i}}
+        </view>
+      </view>
+    </view>
+    <view class="tr " wx:for="{{h}}" wx:for-item="i" wx:key="index">
+      <view class="first timeborder">{{time[i]}}</view>
+      <view class="th">
+        <block wx:for="{{w}}" wx:for-item="j" wx:key="index">
+          <view id="view{{i*10+j}}" class="td {{state[i*10+j]?'selected':'bg-g'}}" bindtap="onChange" wx:if="{{(i+j)%2==0}}"></view>
+          <view id="view{{i*10+j}}" class="td {{state[i*10+j]?'selected':'bg-w'}}" id="view{{i*10+j}}" bindtap="onChange" wx:else></view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <button class="bt" type="primary" bindtap="getme">获取上次提交</button>
+  <button class="bt" type="primary" bindtap="send">提交</button>
+</view>

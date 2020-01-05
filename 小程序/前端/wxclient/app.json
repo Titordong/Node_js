@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Download/Download",
+    "pages/Home/Home",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课表",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/list_ac.png"
+      },
+      {
+        "pagePath": "pages/Download/Download",
+        "text": "下载",
+        "iconPath": "img/main.png",
+        "selectedIconPath": "img/main_ac.png"
+      },
+      {
+        "pagePath": "pages/Home/Home",
+        "text": "我的",
+        "iconPath": "img/user.png",
+        "selectedIconPath": "img/user_ac.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,20 @@
+/* pages/Download/Download.wxss */
+.display{
+  width: 1;
+  background: white;
+  /* border: solid;
+  border-width: 1rem;
+  border-color: aque;
+  display: flex;
+  justify-content: center; 
+  height: 3rem;
+  align-items: center;  */
+}
+.displaybox{
+  margin-top: 50rpx;
+  width: flex;
+  height: 500rpx;
+  background: aqua;
+  border-radius: 5% 5%;
+  padding: 20rpx;
+}

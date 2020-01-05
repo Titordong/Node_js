@@ -1,0 +1,11 @@
+<!--pages/Download/Download.wxml-->
+<view >
+  <view class="displaybox">
+    <text class="display">
+    {{dismessage}}
+    </text>
+  </view>
+  <button class="bt" type="primary" bindtap="load">下载本周课表</button>
+  <loading hidden="{{  loadingHidden }}">加载中...</loading>
+  
+</view>
